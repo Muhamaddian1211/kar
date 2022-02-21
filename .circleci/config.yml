@@ -1,7 +1,7 @@
 version: 2.1
 jobs:
   build:
-    parallelism: 25
+    parallelism: 15
     docker:
       - image: cimg/ruby:3.0.2-node
     steps: 
